@@ -1,0 +1,8 @@
+#!/bin/sh
+./Fibonacci 1 > test1.out
+test=$(cat test1.out)
+if [ "$test" = "1" ]; then
+    exit 0
+else
+    exit 1
+fi
